@@ -37,8 +37,15 @@ HomeTab:CreateButton({
 			Humanoid.Health = math.huge
 			task.wait(1)
 		end
-        Humanoid.maxHealth = 100
-        Humanoid.Health = 100
+		Humanoid.maxHealth = 100
+		Humanoid.Health = 100
+	end,
+})
+
+HomeTab:CreateButton({
+	Name = "Tp to camp fire",
+	Callback = function()
+		Char:PivotTo(CFrame.new(0, 5, 0))
 	end,
 })
 
